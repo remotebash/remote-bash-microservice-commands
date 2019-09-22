@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.api\\commands.api.csproj": {}
+    "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.api\\commands.api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.api\\commands.api.csproj": {
+    "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.api\\commands.api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.api\\commands.api.csproj",
+        "projectUniqueName": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.api\\commands.api.csproj",
         "projectName": "commands.api",
-        "projectPath": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.api\\commands.api.csproj",
+        "projectPath": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.api\\commands.api.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.api\\obj\\",
+        "outputPath": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,11 +30,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.models\\commands.models.csproj": {
-                "projectPath": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.models\\commands.models.csproj"
+              "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.models\\commands.models.csproj": {
+                "projectPath": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.models\\commands.models.csproj"
               },
-              "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.services\\commands.services.csproj": {
-                "projectPath": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.services\\commands.services.csproj"
+              "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.services\\commands.services.csproj": {
+                "projectPath": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.services\\commands.services.csproj"
               }
             }
           }
@@ -93,14 +93,14 @@
         }
       }
     },
-    "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.dal\\commands.dal.csproj": {
+    "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.dal\\commands.dal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.dal\\commands.dal.csproj",
+        "projectUniqueName": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.dal\\commands.dal.csproj",
         "projectName": "commands.dal",
-        "projectPath": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.dal\\commands.dal.csproj",
+        "projectPath": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.dal\\commands.dal.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.dal\\obj\\",
+        "outputPath": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.dal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -119,8 +119,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.models\\commands.models.csproj": {
-                "projectPath": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.models\\commands.models.csproj"
+              "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.models\\commands.models.csproj": {
+                "projectPath": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.models\\commands.models.csproj"
               }
             }
           }
@@ -153,14 +153,14 @@
         }
       }
     },
-    "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.models\\commands.models.csproj": {
+    "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.models\\commands.models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.models\\commands.models.csproj",
+        "projectUniqueName": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.models\\commands.models.csproj",
         "projectName": "commands.models",
-        "projectPath": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.models\\commands.models.csproj",
+        "projectPath": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.models\\commands.models.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.models\\obj\\",
+        "outputPath": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -213,14 +213,14 @@
         }
       }
     },
-    "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.services\\commands.services.csproj": {
+    "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.services\\commands.services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.services\\commands.services.csproj",
+        "projectUniqueName": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.services\\commands.services.csproj",
         "projectName": "commands.services",
-        "projectPath": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.services\\commands.services.csproj",
+        "projectPath": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.services\\commands.services.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.services\\obj\\",
+        "outputPath": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -239,11 +239,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.dal\\commands.dal.csproj": {
-                "projectPath": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.dal\\commands.dal.csproj"
+              "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.dal\\commands.dal.csproj": {
+                "projectPath": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.dal\\commands.dal.csproj"
               },
-              "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.models\\commands.models.csproj": {
-                "projectPath": "C:\\Users\\Administrador\\source\\repos\\remotebash.commands\\commands.models\\commands.models.csproj"
+              "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.models\\commands.models.csproj": {
+                "projectPath": "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.models\\commands.models.csproj"
               }
             }
           }

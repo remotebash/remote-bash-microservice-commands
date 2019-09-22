@@ -7,3 +7,12 @@ C:\Users\Administrador\source\repos\remotebash.commands\commands.models\obj\Debu
 C:\Users\Administrador\source\repos\remotebash.commands\commands.models\obj\Debug\netcoreapp2.1\commands.models.AssemblyInfo.cs
 C:\Users\Administrador\source\repos\remotebash.commands\commands.models\obj\Debug\netcoreapp2.1\commands.models.dll
 C:\Users\Administrador\source\repos\remotebash.commands\commands.models\obj\Debug\netcoreapp2.1\commands.models.pdb
+C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.models\obj\Debug\netcoreapp2.1\commands.models.csprojAssemblyReference.cache
+C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.models\bin\Debug\netcoreapp2.1\commands.models.deps.json
+C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.models\bin\Debug\netcoreapp2.1\commands.models.dll
+C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.models\bin\Debug\netcoreapp2.1\commands.models.pdb
+C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.models\obj\Debug\netcoreapp2.1\commands.models.csproj.CoreCompileInputs.cache
+C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.models\obj\Debug\netcoreapp2.1\commands.models.AssemblyInfoInputs.cache
+C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.models\obj\Debug\netcoreapp2.1\commands.models.AssemblyInfo.cs
+C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.models\obj\Debug\netcoreapp2.1\commands.models.dll
+C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.models\obj\Debug\netcoreapp2.1\commands.models.pdb

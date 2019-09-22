@@ -115,7 +115,7 @@ namespace commands.api.Controllers
         {
             try
             {
-                commandService.SetCommandToExecuted(command);
+                commandService.UpdateCommand(command);
                 JsonResult json = new JsonResult("sucess")
                 {
                     StatusCode = (int)HttpStatusCode.OK
