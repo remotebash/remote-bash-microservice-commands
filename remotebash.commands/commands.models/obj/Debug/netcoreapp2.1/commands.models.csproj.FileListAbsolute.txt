@@ -1,0 +1,9 @@
+C:\Users\Administrador\source\repos\remotebash.commands\commands.models\bin\Debug\netcoreapp2.1\commands.models.deps.json
+C:\Users\Administrador\source\repos\remotebash.commands\commands.models\bin\Debug\netcoreapp2.1\commands.models.dll
+C:\Users\Administrador\source\repos\remotebash.commands\commands.models\bin\Debug\netcoreapp2.1\commands.models.pdb
+C:\Users\Administrador\source\repos\remotebash.commands\commands.models\obj\Debug\netcoreapp2.1\commands.models.csprojAssemblyReference.cache
+C:\Users\Administrador\source\repos\remotebash.commands\commands.models\obj\Debug\netcoreapp2.1\commands.models.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\source\repos\remotebash.commands\commands.models\obj\Debug\netcoreapp2.1\commands.models.AssemblyInfoInputs.cache
+C:\Users\Administrador\source\repos\remotebash.commands\commands.models\obj\Debug\netcoreapp2.1\commands.models.AssemblyInfo.cs
+C:\Users\Administrador\source\repos\remotebash.commands\commands.models\obj\Debug\netcoreapp2.1\commands.models.dll
+C:\Users\Administrador\source\repos\remotebash.commands\commands.models\obj\Debug\netcoreapp2.1\commands.models.pdb

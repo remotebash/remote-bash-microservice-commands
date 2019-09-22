@@ -1,0 +1,14 @@
+C:\Users\Administrador\source\repos\remotebash.commands\commands.dal\bin\Debug\netcoreapp2.1\commands.dal.deps.json
+C:\Users\Administrador\source\repos\remotebash.commands\commands.dal\bin\Debug\netcoreapp2.1\commands.dal.dll
+C:\Users\Administrador\source\repos\remotebash.commands\commands.dal\bin\Debug\netcoreapp2.1\commands.dal.pdb
+C:\Users\Administrador\source\repos\remotebash.commands\commands.dal\bin\Debug\netcoreapp2.1\commands.models.dll
+C:\Users\Administrador\source\repos\remotebash.commands\commands.dal\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Options.dll
+C:\Users\Administrador\source\repos\remotebash.commands\commands.dal\bin\Debug\netcoreapp2.1\commands.models.pdb
+C:\Users\Administrador\source\repos\remotebash.commands\commands.dal\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Options.xml
+C:\Users\Administrador\source\repos\remotebash.commands\commands.dal\obj\Debug\netcoreapp2.1\commands.dal.csprojAssemblyReference.cache
+C:\Users\Administrador\source\repos\remotebash.commands\commands.dal\obj\Debug\netcoreapp2.1\commands.dal.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\source\repos\remotebash.commands\commands.dal\obj\Debug\netcoreapp2.1\commands.dal.AssemblyInfoInputs.cache
+C:\Users\Administrador\source\repos\remotebash.commands\commands.dal\obj\Debug\netcoreapp2.1\commands.dal.AssemblyInfo.cs
+C:\Users\Administrador\source\repos\remotebash.commands\commands.dal\obj\Debug\netcoreapp2.1\commands.dal.csproj.CopyComplete
+C:\Users\Administrador\source\repos\remotebash.commands\commands.dal\obj\Debug\netcoreapp2.1\commands.dal.dll
+C:\Users\Administrador\source\repos\remotebash.commands\commands.dal\obj\Debug\netcoreapp2.1\commands.dal.pdb

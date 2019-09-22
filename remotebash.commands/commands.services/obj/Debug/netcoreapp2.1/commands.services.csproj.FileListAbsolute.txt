@@ -1,0 +1,16 @@
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\commands.services.deps.json
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\commands.services.dll
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\commands.services.pdb
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\commands.dal.dll
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\commands.models.dll
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Options.dll
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\commands.dal.pdb
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\commands.models.pdb
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Options.xml
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\obj\Debug\netcoreapp2.1\commands.services.csprojAssemblyReference.cache
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\obj\Debug\netcoreapp2.1\commands.services.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\obj\Debug\netcoreapp2.1\commands.services.AssemblyInfoInputs.cache
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\obj\Debug\netcoreapp2.1\commands.services.AssemblyInfo.cs
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\obj\Debug\netcoreapp2.1\commands.services.csproj.CopyComplete
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\obj\Debug\netcoreapp2.1\commands.services.dll
+C:\Users\Administrador\source\repos\remotebash.commands\commands.services\obj\Debug\netcoreapp2.1\commands.services.pdb
