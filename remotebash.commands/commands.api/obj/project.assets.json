@@ -5065,6 +5065,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "Microsoft.Extensions.Options": "2.1.1",
           "MongoDB.Driver": "2.9.1",
           "commands.models": "1.0.0"
         },
@@ -5093,6 +5094,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "Microsoft.Extensions.Options": "2.1.1",
           "Newtonsoft.Json": "12.0.2",
           "commands.dal": "1.0.0",
           "commands.models": "1.0.0"

@@ -19,10 +19,8 @@ C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\rem
 C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\commands.services.pdb
 C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\commands.dal.dll
 C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\commands.models.dll
-C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Options.dll
 C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\commands.dal.pdb
 C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\commands.models.pdb
-C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.services\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Options.xml
 C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.services\obj\Debug\netcoreapp2.1\commands.services.csprojAssemblyReference.cache
 C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.services\obj\Debug\netcoreapp2.1\commands.services.csproj.CoreCompileInputs.cache
 C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.services\obj\Debug\netcoreapp2.1\commands.services.AssemblyInfoInputs.cache
