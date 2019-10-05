@@ -24,7 +24,8 @@ namespace commands.dal.Commands
         {
             try
             {
-                return _context.Command.Find(cmd => cmd.IdCommand == idCommand).FirstOrDefault();
+                var commmad = _context.Command.Find(cmd => cmd.IdCommand == idCommand).FirstOrDefault();
+                return commmad ?? new Command();
             }
             catch (Exception ex)
             {
@@ -36,7 +37,8 @@ namespace commands.dal.Commands
         {
             try
             {
-                return _context.Command.Find(cmd => cmd.IdCommand == idCommand && cmd.IsExecuted).FirstOrDefault();
+                var commmad = _context.Command.Find(cmd => cmd.IdCommand == idCommand && cmd.IsExecuted).FirstOrDefault();
+                return commmad ?? new Command();
             }
             catch (Exception ex)
             {
@@ -48,7 +50,11 @@ namespace commands.dal.Commands
         {
             try
             {
-                return _context.Command.Find(cmd => cmd.IdComputer == idComputer).ToList();
+                var commands = _context.Command.Find(cmd => cmd.IdComputer == idComputer);
+                if (commands.CountDocuments() > 0)
+                    return commands.ToList();
+                else
+                    return new List<Command>();
             }
             catch (Exception ex)
             {

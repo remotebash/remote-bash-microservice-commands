@@ -31,7 +31,7 @@ namespace commands.api.Controllers
         /// get command executed
         /// </summary>
         /// <param name="idCommand"></param>
-        /// <returns></returns>
+        /// <returns>Command</returns>
         [HttpGet("{idCommand}")]
         public JsonResult GetCommandExecuted(string idCommand)
         {
@@ -82,9 +82,9 @@ namespace commands.api.Controllers
         }
 
         /// <summary>
-        /// 
+        /// saves a command to the base. This command is sent from our main api rest
         /// </summary>
-        /// <returns></returns>
+        /// <returns>void</returns>
         [HttpPost]
         public JsonResult SaveCommand([FromBody] Command command)
         {
@@ -107,9 +107,9 @@ namespace commands.api.Controllers
         }
 
         /// <summary>
-        /// 
+        /// updates a command.The computer sends an update for this microservice
         /// </summary>
-        /// <returns></returns>
+        /// <returns>bool</returns>
         [HttpPut]
         public JsonResult PutCommand([FromBody] Command command)
         {

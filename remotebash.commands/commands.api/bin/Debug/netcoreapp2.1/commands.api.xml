@@ -9,7 +9,7 @@
             get command executed
             </summary>
             <param name="idCommand"></param>
-            <returns></returns>
+            <returns>Command</returns>
         </member>
         <member name="M:commands.api.Controllers.CommandsController.GetCommandToExecute(System.String)">
             <summary>
@@ -19,15 +19,15 @@
         </member>
         <member name="M:commands.api.Controllers.CommandsController.SaveCommand(commands.api.Models.Command)">
             <summary>
-            
+            saves a command to the base. This command is sent from our main api rest
             </summary>
-            <returns></returns>
+            <returns>void</returns>
         </member>
         <member name="M:commands.api.Controllers.CommandsController.PutCommand(commands.api.Models.Command)">
             <summary>
-            
+            updates a command.The computer sends an update for this microservice
             </summary>
-            <returns></returns>
+            <returns>bool</returns>
         </member>
         <member name="T:commands.api.Program">
             <summary>

@@ -66,6 +66,11 @@
           "assetTargetFallback": true,
           "warn": true
         }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
       }
     },
     "C:\\dev\\git\\remotebash\\microservice-command\\remote-bash-microservice-commands\\remotebash.commands\\commands.models\\commands.models.csproj": {
@@ -125,6 +130,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }
