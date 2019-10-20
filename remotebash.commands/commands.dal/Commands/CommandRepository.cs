@@ -62,11 +62,12 @@ namespace commands.dal.Commands
             }
         }
 
-        public void SaveCommand(Command command)
+        public Command SaveCommand(Command command)
         {
             try
             {
                 _context.Command.InsertOne(command);
+                return GetCommand(command.IdCommand);
             }
             catch (Exception ex)
             {
