@@ -7,7 +7,7 @@ namespace commands.models.Interfaces
 {
     public interface ICommandRepository
     {
-        List<Command> GetCommandsToExecute(string idComputer);
+        List<Command> GetCommandsToExecute(long idComputer);
 
         Command GetCommand(string idCommand);
 

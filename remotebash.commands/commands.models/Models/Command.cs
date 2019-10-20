@@ -15,7 +15,7 @@ namespace commands.api.Models
         public string IdCommand { get; set; }
 
         [JsonProperty("idComputer")]
-        public string IdComputer { get; set; }
+        public long IdComputer { get; set; }
 
         [JsonProperty("platform")]
         public string Platform { get; set; }
@@ -34,8 +34,8 @@ namespace commands.api.Models
         [JsonProperty("end")]
         public DateTime End { get; set; }
 
-        [JsonProperty("whoExcuted")]
-        public string WhoExcuted { get; set; }
+        [JsonProperty("userId")]
+        public long UserId { get; set; }
 
         [JsonProperty("isExecuted")]
         public bool IsExecuted { get; set; }
