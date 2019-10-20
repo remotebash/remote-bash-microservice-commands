@@ -11,7 +11,7 @@
             <param name="idCommand"></param>
             <returns>Command</returns>
         </member>
-        <member name="M:commands.api.Controllers.CommandsController.GetCommandToExecute(System.String)">
+        <member name="M:commands.api.Controllers.CommandsController.GetCommandToExecute(System.Int64)">
             <summary>
             get all commands to the computer run
             </summary>

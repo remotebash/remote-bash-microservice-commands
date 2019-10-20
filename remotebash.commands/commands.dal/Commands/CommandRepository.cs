@@ -46,7 +46,7 @@ namespace commands.dal.Commands
             }
         }
 
-        public List<Command> GetCommandsToExecute(string idComputer)
+        public List<Command> GetCommandsToExecute(long idComputer)
         {
             try
             {
