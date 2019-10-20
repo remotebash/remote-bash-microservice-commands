@@ -18,13 +18,22 @@ namespace commands.services.Commands
             commandRepository = new CommandRepository(settings);
         }
 
-        public void SaveCommand(Command command)
+        public Command SaveCommand(Command command)
         {
-            if (command != null)
-                commandRepository.SaveCommand(command);
+            if (command == null)
+                return null;
+            try{
+                Command commandSaved = commandRepository.SaveCommand(command);
+                return GetCommandExecuted(commandSaved.IdCommand);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
         }
 
-        public Command GetCommandExecuted(string idCommand)
+        private Command GetCommandExecuted(string idCommand)
         {
             bool find = false;
             Command commandExecuted = null;

@@ -11,9 +11,7 @@ namespace commands.models.Interfaces
 
         Command GetCommand(string idCommand);
 
-        Command GetCommandExecuted(string idCommand);
-
-        void SaveCommand(Command command);
+        Command SaveCommand(Command command);
 
         bool UpdateCommand(Command command);
     }

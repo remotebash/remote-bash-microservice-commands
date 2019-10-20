@@ -28,33 +28,6 @@ namespace commands.api.Controllers
 #pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 
         /// <summary>
-        /// get command executed
-        /// </summary>
-        /// <param name="idCommand"></param>
-        /// <returns>Command</returns>
-        [HttpGet("{idCommand}")]
-        public JsonResult GetCommandExecuted(string idCommand)
-        {
-            try
-            {
-                Command command = commandService.GetCommandExecuted(idCommand);
-                JsonResult json = Json(command);
-                if (command == null)
-                    json.StatusCode = (int)HttpStatusCode.NoContent;
-                else
-                    json.StatusCode = (int)HttpStatusCode.OK;
-
-                return json;
-            }
-            catch (Exception ex)
-            {
-                JsonResult json = Json(ex);
-                json.StatusCode = (int)HttpStatusCode.InternalServerError;
-                return json;
-            }
-        }
-
-        /// <summary>
         /// get all commands to the computer run
         /// </summary>
         /// <returns>list of commands to the computer run</returns>
@@ -82,7 +55,7 @@ namespace commands.api.Controllers
         }
 
         /// <summary>
-        /// saves a command to the base. This command is sent from our main api rest
+        /// saves a command to the base and execute on pc. This command is sent from our main api rest
         /// </summary>
         /// <returns>void</returns>
         [HttpPost]
@@ -90,8 +63,8 @@ namespace commands.api.Controllers
         {
             try
             {
-                commandService.SaveCommand(command);
-                JsonResult json = new JsonResult("sucess")
+                Command  commandSaved = commandService.SaveCommand(command);
+                JsonResult json = new JsonResult(commandSaved)
                 {
                     StatusCode = (int)HttpStatusCode.Created
                 };
