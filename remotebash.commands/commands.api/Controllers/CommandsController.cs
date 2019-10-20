@@ -59,7 +59,7 @@ namespace commands.api.Controllers
         /// </summary>
         /// <returns>list of commands to the computer run</returns>
         [HttpGet("computer/{idComputer}")]
-        public JsonResult GetCommandToExecute(string idComputer)
+        public JsonResult GetCommandToExecute(long idComputer)
         {
             try
             {

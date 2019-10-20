@@ -34,6 +34,7 @@ namespace commands.services.Commands
 
             while (!find)
             {
+                //TOOD VERIFICAR SE O PC ESTÁ ONLINE
                 Command commandSearch = SearchCommandExecuted(idCommand);
                 if (commandSearch != null)
                 {
@@ -53,7 +54,7 @@ namespace commands.services.Commands
             return commandRepository.GetCommandExecuted(idCommand);
         }
 
-        public List<Command> GetCommandsToExecute(string idComputer)
+        public List<Command> GetCommandsToExecute(long idComputer)
         {
             return commandRepository.GetCommandsToExecute(idComputer);
         }
