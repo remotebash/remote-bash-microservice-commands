@@ -24,8 +24,7 @@ namespace commands.dal.Commands
         {
             try
             {
-                var commmad = _context.Command.Find(cmd => cmd.IdCommand == idCommand).FirstOrDefault();
-                return commmad ?? new Command();
+                return _context.Command.Find(cmd => cmd.IdCommand == idCommand).FirstOrDefault();
             }
             catch (Exception ex)
             {

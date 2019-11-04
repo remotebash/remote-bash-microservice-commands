@@ -2,6 +2,7 @@
 using commands.dal.Commands;
 using commands.models;
 using commands.models.Interfaces;
+using commands.services.Computer;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
@@ -22,9 +23,16 @@ namespace commands.services.Commands
         {
             if (command == null)
                 return null;
-            try{
+            try
+            {
                 Command commandSaved = commandRepository.SaveCommand(command);
-                return GetCommandExecuted(commandSaved.IdCommand);
+                if (commandSaved != null)
+                    return GetCommandExecuted(commandSaved.IdCommand);
+                else
+                {
+                    command.ComplementCommandFinish("Ocorreu um erro ao tentar executar esse comando. Se o erro persistir entre em contato com a Remotebash.");
+                    return command;
+                }
             }
             catch (Exception)
             {
@@ -38,21 +46,28 @@ namespace commands.services.Commands
             bool find = false;
             Command commandExecuted = null;
 
-            if (GetCommand(idCommand) == null)
-                return null;
-
             while (!find)
             {
-                //TOOD VERIFICAR SE O PC ESTÁ ONLINE
+                ComputerService computerService = new ComputerService();
                 Command commandSearch = SearchCommandExecuted(idCommand);
-                if (commandSearch != null)
+                if (computerService.IsComputerOnline(commandSearch.IdComputer))
                 {
-                    commandExecuted = commandSearch;
-                    find = true;
+                    if (commandSearch != null)
+                    {
+                        commandExecuted = commandSearch;
+                        find = true;
+                    }
+                    else
+                    {
+                        Thread.Sleep(500);
+                    }
                 }
                 else
                 {
-                    Thread.Sleep(500);
+                    var commandToExecute = GetCommand(idCommand);
+                    commandToExecute.ComplementCommandFinish("O computador não está online.");
+                    commandExecuted = commandToExecute;                    
+                    break;
                 }
             }
             return commandExecuted;

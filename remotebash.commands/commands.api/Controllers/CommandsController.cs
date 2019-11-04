@@ -57,7 +57,7 @@ namespace commands.api.Controllers
         /// <summary>
         /// saves a command to the base and execute on pc. This command is sent from our main api rest
         /// </summary>
-        /// <returns>void</returns>
+        /// <returns>json object of Command (Executed)</returns>
         [HttpPost]
         public JsonResult SaveCommand([FromBody] Command command)
         {
@@ -66,7 +66,7 @@ namespace commands.api.Controllers
                 Command  commandSaved = commandService.SaveCommand(command);
                 JsonResult json = new JsonResult(commandSaved)
                 {
-                    StatusCode = (int)HttpStatusCode.Created
+                    StatusCode = (int)HttpStatusCode.OK
                 };
                 return json;
             }
@@ -89,7 +89,7 @@ namespace commands.api.Controllers
             try
             {
                 commandService.UpdateCommand(command);
-                JsonResult json = new JsonResult("sucess")
+                JsonResult json = new JsonResult("success")
                 {
                     StatusCode = (int)HttpStatusCode.OK
                 };
