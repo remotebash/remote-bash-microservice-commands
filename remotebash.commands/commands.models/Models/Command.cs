@@ -32,12 +32,19 @@ namespace commands.api.Models
 
         [BsonDateTimeOptions]
         [JsonProperty("end")]
-        public DateTime End { get; set; }
+        public DateTime? End { get; set; }
 
         [JsonProperty("userId")]
         public long UserId { get; set; }
 
         [JsonProperty("isExecuted")]
         public bool IsExecuted { get; set; }
+
+        public void ComplementCommandFinish(string message)
+        {
+            Result = message;
+            End = DateTime.Now;
+            IsExecuted = true;
+        }
     }
 }
