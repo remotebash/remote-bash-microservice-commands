@@ -17,8 +17,8 @@ namespace commands.api.Models
         [JsonProperty("idComputer")]
         public long IdComputer { get; set; }
 
-        [JsonProperty("platform")]
-        public string Platform { get; set; }
+        [JsonProperty("operationalSystem")]
+        public string OperationalSystem { get; set; }
 
         [JsonProperty("command")]
         public string CommandToExecute { get; set; }
