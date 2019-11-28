@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "commands.api", "commands.api\commands.api.csproj", "{B059E72B-455E-47B4-BB75-77BF2D9DA083}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "commands.api", "commands.api\commands.api.csproj", "{B059E72B-455E-47B4-BB75-77BF2D9DA083}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "commands.models", "commands.models\commands.models.csproj", "{040D7DA5-FCAD-44F6-978F-EC76E02270BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "commands.models", "commands.models\commands.models.csproj", "{040D7DA5-FCAD-44F6-978F-EC76E02270BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "commands.services", "commands.services\commands.services.csproj", "{1E01B1BF-DC71-41DE-8FF2-3C461E2AC056}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "commands.services", "commands.services\commands.services.csproj", "{1E01B1BF-DC71-41DE-8FF2-3C461E2AC056}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "commands.dal", "commands.dal\commands.dal.csproj", "{45E25524-C725-4674-B50B-5BCFDF2666C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "commands.dal", "commands.dal\commands.dal.csproj", "{45E25524-C725-4674-B50B-5BCFDF2666C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -18,7 +18,6 @@ C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\rem
 C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.dal\bin\Debug\netcoreapp2.1\commands.models.dll
 C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.dal\bin\Debug\netcoreapp2.1\commands.models.pdb
 C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.dal\obj\Debug\netcoreapp2.1\commands.dal.csprojAssemblyReference.cache
-C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.dal\obj\Debug\netcoreapp2.1\commands.dal.csproj.CoreCompileInputs.cache
 C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.dal\obj\Debug\netcoreapp2.1\commands.dal.AssemblyInfoInputs.cache
 C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.dal\obj\Debug\netcoreapp2.1\commands.dal.AssemblyInfo.cs
 C:\dev\git\remotebash\microservice-command\remote-bash-microservice-commands\remotebash.commands\commands.dal\obj\Debug\netcoreapp2.1\commands.dal.csproj.CopyComplete

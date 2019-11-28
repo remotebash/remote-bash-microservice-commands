@@ -14,6 +14,7 @@ using Microsoft.Extensions.Options;
 namespace commands.api.Controllers
 {
 #pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+    [Produces("application/json")]
     [Route("/command/")]
     [ApiController]
     public class CommandsController : Controller
@@ -64,6 +65,7 @@ namespace commands.api.Controllers
             try
             {
                 Command  commandSaved = commandService.SaveCommand(command);
+                if(commandSaved.Result == "O computador não está online.") PutCommand(command);
                 JsonResult json = new JsonResult(commandSaved)
                 {
                     StatusCode = (int)HttpStatusCode.OK
@@ -71,7 +73,7 @@ namespace commands.api.Controllers
                 return json;
             }
             catch (Exception ex)
-            {
+            {   
                 JsonResult json = Json(ex);
                 json.StatusCode = (int)HttpStatusCode.InternalServerError;
                 return json;

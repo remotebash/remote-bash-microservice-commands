@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "commands.services": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}
