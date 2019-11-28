@@ -37,7 +37,7 @@ namespace commands.dal.Commands
             try
             {
                 var commmad = _context.Command.Find(cmd => cmd.IdCommand == idCommand && cmd.IsExecuted).FirstOrDefault();
-                return commmad ?? new Command();
+                return commmad;
             }
             catch (Exception ex)
             {
@@ -49,7 +49,7 @@ namespace commands.dal.Commands
         {
             try
             {
-                var commands = _context.Command.Find(cmd => cmd.IdComputer == idComputer);
+                var commands = _context.Command.Find(cmd => cmd.IdComputer == idComputer && !cmd.IsExecuted && cmd.Result.Length == 0);
                 if (commands.CountDocuments() > 0)
                     return commands.ToList();
                 else

@@ -27,7 +27,7 @@ namespace commands.services.Commands
             {
                 Command commandSaved = commandRepository.SaveCommand(command);
                 if (commandSaved != null)
-                    return GetCommandExecuted(commandSaved.IdCommand);
+                    return GetCommandExecuted(commandSaved);
                 else
                 {
                     command.ComplementCommandFinish("Ocorreu um erro ao tentar executar esse comando. Se o erro persistir entre em contato com a Remotebash.");
@@ -41,7 +41,7 @@ namespace commands.services.Commands
 
         }
 
-        private Command GetCommandExecuted(string idCommand)
+        private Command GetCommandExecuted(Command command)
         {
             bool find = false;
             Command commandExecuted = null;
@@ -49,12 +49,12 @@ namespace commands.services.Commands
             while (!find)
             {
                 ComputerService computerService = new ComputerService();
-                Command commandSearch = SearchCommandExecuted(idCommand);
-                if (computerService.IsComputerOnline(commandSearch.IdComputer))
+                Command commandSearchExecuted = SearchCommandExecuted(command.IdCommand);
+                if (computerService.IsComputerOnline(command.IdComputer))
                 {
-                    if (commandSearch != null)
+                    if (commandSearchExecuted != null)
                     {
-                        commandExecuted = commandSearch;
+                        commandExecuted = commandSearchExecuted;
                         find = true;
                     }
                     else
@@ -64,7 +64,7 @@ namespace commands.services.Commands
                 }
                 else
                 {
-                    var commandToExecute = GetCommand(idCommand);
+                    var commandToExecute = GetCommand(command.IdCommand);
                     commandToExecute.ComplementCommandFinish("O computador não está online.");
                     commandExecuted = commandToExecute;                    
                     break;

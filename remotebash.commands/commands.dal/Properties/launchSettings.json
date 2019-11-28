@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "commands.dal": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}

@@ -14,7 +14,7 @@
             <summary>
             saves a command to the base and execute on pc. This command is sent from our main api rest
             </summary>
-            <returns>void</returns>
+            <returns>json object of Command (Executed)</returns>
         </member>
         <member name="M:commands.api.Controllers.CommandsController.PutCommand(commands.api.Models.Command)">
             <summary>
