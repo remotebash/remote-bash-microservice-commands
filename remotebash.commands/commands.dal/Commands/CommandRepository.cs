@@ -45,6 +45,19 @@ namespace commands.dal.Commands
             }
         }
 
+        public List<Command> GetCommandByComputer(long idComputer)
+        {
+            try
+            {
+                var commmad = _context.Command.Find(cmd => cmd.IdComputer == idComputer).ToList();
+                return commmad;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public List<Command> GetCommandsToExecute(long idComputer)
         {
             try

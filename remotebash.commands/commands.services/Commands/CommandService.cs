@@ -38,7 +38,25 @@ namespace commands.services.Commands
             {
                 throw;
             }
+        }
 
+        public string SaveCommandInLaboratory(List<Command> commands)
+        {
+            string executeIn = string.Empty;
+            foreach(Command command in commands)
+            {
+                try
+                {
+                    ComputerService computerService = new ComputerService();
+                    if (computerService.IsComputerOnline(command.IdComputer))
+                    {
+                        SaveCommand(command);
+                        executeIn += $"Comando enviado para o computador {command.IdComputer}";
+                    }
+                }
+                catch(Exception) { }
+            }
+            return executeIn;
         }
 
         private Command GetCommandExecuted(Command command)
@@ -71,6 +89,19 @@ namespace commands.services.Commands
                 }
             }
             return commandExecuted;
+        }
+
+        public List<Command> GetCommandsByComputer(long idComputer)
+        {
+            List<Command> commands = commandRepository.GetCommandByComputer(idComputer);
+            foreach (Command command in commands)
+            {
+                if (command.IsExecuted && string.IsNullOrWhiteSpace(command.Result))
+                    command.Result = "Comando executado.";
+                else if(!command.IsExecuted && string.IsNullOrWhiteSpace(command.Result))
+                    command.Result = "Comando ainda não executado.";
+            }
+            return commands;
         }
 
         private Command SearchCommandExecuted(string idCommand)

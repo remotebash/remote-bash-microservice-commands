@@ -55,6 +55,29 @@ namespace commands.api.Controllers
             }
         }
 
+        [HttpGet("computer/commands/{idComputer}")]
+        public JsonResult GetCommandByCommands(long idComputer)
+        {
+            try
+            {
+                List<Command> commands = commandService.GetCommandsByComputer(idComputer);
+                JsonResult json = Json(commands);
+
+                if (commands == null)
+                    json.StatusCode = (int)HttpStatusCode.NoContent;
+                else
+                    json.StatusCode = (int)HttpStatusCode.OK;
+
+                return json;
+            }
+            catch (Exception ex)
+            {
+                JsonResult json = Json(ex);
+                json.StatusCode = (int)HttpStatusCode.InternalServerError;
+                return json;
+            }
+        }
+
         /// <summary>
         /// saves a command to the base and execute on pc. This command is sent from our main api rest
         /// </summary>
@@ -74,6 +97,32 @@ namespace commands.api.Controllers
             }
             catch (Exception ex)
             {   
+                JsonResult json = Json(ex);
+                json.StatusCode = (int)HttpStatusCode.InternalServerError;
+                return json;
+            }
+
+        }
+
+        /// <summary>
+        /// saves commands to the base. This command is sent from our main api rest
+        /// </summary>
+        /// <returns>json object of Command (Executed)</returns>
+        [HttpPost]
+        [Route("laboratory")]
+        public JsonResult SaveCommandInLaboratory([FromBody] List<Command> commands)
+        {
+            try
+            {
+                string commandsSaved = commandService.SaveCommandInLaboratory(commands);
+                JsonResult json = new JsonResult(commandsSaved)
+                {
+                    StatusCode = (int)HttpStatusCode.OK
+                };
+                return json;
+            }
+            catch (Exception ex)
+            {
                 JsonResult json = Json(ex);
                 json.StatusCode = (int)HttpStatusCode.InternalServerError;
                 return json;
