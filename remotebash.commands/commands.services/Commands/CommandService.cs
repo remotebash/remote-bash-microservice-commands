@@ -52,9 +52,9 @@ namespace commands.services.Commands
                     {
                         ComputerService computerService = new ComputerService();
                         if (computerService.IsComputerOnline(command.IdComputer))
-                            executeIn += $"Comando enviado para o computador {command.IdComputer}";
+                            executeIn += $"Comando enviado para o computador {command.IdComputer}{Environment.NewLine}";
                         else
-                            executeIn += $"O Computador {command.IdComputer} não está online, mas o comando será executado assim que o mesmo estiver.";
+                            executeIn += $"O Computador {command.IdComputer} não está online, mas o comando será executado assim que o mesmo estiver.{Environment.NewLine}";
                     }
                 }
                 catch (Exception ex) { throw ex; }
