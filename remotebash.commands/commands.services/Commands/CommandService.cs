@@ -43,18 +43,21 @@ namespace commands.services.Commands
         public string SaveCommandInLaboratory(List<Command> commands)
         {
             string executeIn = string.Empty;
-            foreach(Command command in commands)
+            foreach (Command command in commands)
             {
                 try
                 {
-                    ComputerService computerService = new ComputerService();
-                    if (computerService.IsComputerOnline(command.IdComputer))
+                    Command commandSaved = commandRepository.SaveCommand(command);
+                    if (commandSaved != null)
                     {
-                        SaveCommand(command);
-                        executeIn += $"Comando enviado para o computador {command.IdComputer}";
+                        ComputerService computerService = new ComputerService();
+                        if (computerService.IsComputerOnline(command.IdComputer))
+                            executeIn += $"Comando enviado para o computador {command.IdComputer}";
+                        else
+                            executeIn += $"O Computador {command.IdComputer} não está online, mas o comando será executado assim que o mesmo estiver.";
                     }
                 }
-                catch(Exception) { }
+                catch (Exception ex) { throw ex; }
             }
             return executeIn;
         }
@@ -84,7 +87,7 @@ namespace commands.services.Commands
                 {
                     var commandToExecute = GetCommand(command.IdCommand);
                     commandToExecute.ComplementCommandFinish("O computador não está online.");
-                    commandExecuted = commandToExecute;                    
+                    commandExecuted = commandToExecute;
                     break;
                 }
             }
@@ -98,7 +101,7 @@ namespace commands.services.Commands
             {
                 if (command.IsExecuted && string.IsNullOrWhiteSpace(command.Result))
                     command.Result = "Comando executado.";
-                else if(!command.IsExecuted && string.IsNullOrWhiteSpace(command.Result))
+                else if (!command.IsExecuted && string.IsNullOrWhiteSpace(command.Result))
                     command.Result = "Comando ainda não executado.";
             }
             return commands;
